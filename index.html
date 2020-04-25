@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nitess Water</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+<body style="background-color: rgb(8, 8, 131)">
+
+ <div class="container">
+    <div class="row">
+        <div class="col-sm">
+            
+        </div>
+        <div class="" id="login_div" style="background-color: rgb(255, 255, 255);">
+                <form name="signIn" style="color: rgb(16, 17, 107);" >
+                    <center><h4> NITESS WATER</h4>
+                    <b>Sign In with your Email and Password<br></b>
+                    <span style="font-size: 13px">Only the Admin is allowed access</span>
+                    </center>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="adminInputEmail" aria-describedby="emailHelp" placeholder="Email" >
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="adminInputPassword" placeholder="Password">
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="adminCheck1" name=checkBox>
+                        <label class="form-check-label" for="adminCheck1">Verify</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" onclick="return validateLogin()">Login</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button type="submit" class="btn btn-primary" onclick="reset_warn()">Reset</button>
+                    </form>
+                    <!--onclick="reset_warn()"-->
+        <div class="col-sm">
+
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    
+    
+function validateLogin(){
+    var validEmail = document.getElementById("adminInputEmail").value;
+    var validPassword = document.getElementById("adminInputPassword").value;
+        if (validEmail == "admin@nitesswater.com" && validPassword == "admin2020"){
+        validation();
+        
+ 
+    }
+
+    else{
+    alert("Wrong Username or Password!");
+    }
+    
+}
+
+function submit_msg (){
+        var welcome = prompt("Are you the admin?");
+        if (welcome == "yes" || welcome == "YES" || welcome == "Yes" || welcome == "yEs" || welcome == "yeS"){
+            location.href = "#dashboard.html";
+            gotoPage();
+        }
+        else {
+            document.write("Sorry, Access Denied");
+            
+        }
+      }
+
+      function gotoPage(){
+          location.href = "dashboard.html";
+      }
+
+</script>
+
+
+
+
+
+<footer>
+    <center><i style="color: rgb(255, 255, 255); font-size: 15px;"><a href="http://www.glupertechnologies.com/" target="blank">Powered By G-Luper Tech &copy 2020</a></i></center>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>

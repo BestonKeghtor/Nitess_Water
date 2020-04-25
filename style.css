@@ -1,0 +1,79 @@
+#login_div {
+    background-color: powderblue;
+    margin: 0 auto;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%; 
+    border-radius: 3%;
+}
+
+h4{
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+reset_warn.document.write{
+    background-color: powderblue;
+}
+label{
+    color: blue;
+}
+.form-group{
+    padding-top: 10%;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: rgb(10, 10, 90);
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+  table{ 
+    border-collapse:separate; 
+    border-spacing: 0 10px; 
+    } 
+
+    th{ 
+    background-color: #4287f5; 
+    color: white; 
+    font-size: 20px;
+    } 
+
+    th,td{ 
+    width: 100px; 
+    text-align: center; 
+    border: 0.5px solid black; 
+    padding: 5px;
+    border-radius: 5px;
+    }
+    
+    h2{ 
+    color: #4287f5; 
+    }
+    h1 {
+      font-weight: bold;
+      text-align: center;
+    }

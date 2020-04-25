@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <title>Nitess | Sales</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+    <div class="topnav" id="myTopnav">
+        <a href="production.html">Production</a>
+        <a href="sales.html">Sales</a>
+        <a href="stock.html">Stock</a> 
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a> 
+        <a href="index.html" style="float: right; font-size: 15px; padding-block-end: 3%;">Sign Out</a>
+      </div>
+      <div>
+        <h1 style="color: blue; padding-left: 10%;">SALES COMMISSION CALCULATOR</h1>
+      </div>
+<div class="container">
+<table class="table">
+<tr>
+    <th scope="col">S/N</th>
+    <th scope="col">Salesperson</th>
+    <th scope="col">Bags Sold</th>
+    <th scope="col">Commission</th>
+    <th scope="col">Total</th>
+</tr>
+
+<tr>
+    <td>1</td>
+    <td><input type="text"  class="t" name="total_item1"></td>
+    <td><input type="text" class="t" name="int_item1"></td>
+    <td onload="submit()"></td>
+    <td onload="submit()"></td>
+</tr>
+<tr>
+    <td>2</td>
+    <td><input type="text"  class="t" name="total_item2"></td>
+    <td><input type="text" class="t" name="int_item2"></td>
+    <td onload="submit()"></td>
+    <td onload="submit()"></td>
+</tr>
+<tr>
+    <td>3</td>
+    <td><input type="text"  class="t" name="total_item3"></td>
+    <td><input type="text" class="t" name="int_item3"></td>
+    <td onload="submit()"></td>
+    <td onload="submit()"></td>
+</tr>
+<tr>
+    <td>4</td>
+    <td><input type="text"  class="t" name="total_item4"></td>
+    <td><input type="text" class="t" name="int_item4"></td>
+    <td onload="submit()"></td>
+    <td onload="submit()"></td>
+</tr>
+<tr>
+    <td>5</td>
+    <td><input type="text"  class="t" name="total_item5"></td>
+    <td><input type="text" class="t" name="int_item5"></td>
+    <td onload="submit()"></td>
+    <td onload="submit()"></td>
+</tr>
+<tr>
+    <td>6</td>
+    <td><input type="text"  class="t" name="total_item6"></td>
+    <td><input type="text" class="t" name="int_item6"></td>
+    <td onload="submit()"></td>
+    <td onload="submit()"></td>
+</tr>
+<tr>
+    <td>7</td>
+    <td><input type="text"  class="t" name="total_item7"></td>
+    <td><input type="text" class="t" name="int_item7"></td>
+    <td onload="submit()"></td>
+    <td onload="submit()"></td>
+</tr>
+<tr>
+    <td>8</td>
+    <td><input type="text"  class="t" name="total_item8"></td>
+    <td><input type="text" class="t" name="int_item8"></td>
+    <td onload="submit()"></td>
+    <td onload="submit()"></td>
+</tr>
+<tr>
+    <td>9</td>
+    <td><input type="text"  class="t" name="total_item9"></td>
+    <td><input type="text" class="t" name="int_item9"></td>
+    <td onload="submit()"></td>
+    <td onclick="submit()"></td>
+</tr>
+<tr>
+    <td>10</td>
+    <td><input type="text"  class="t" name="total_item10"></td>
+    <td><input type="text" class="t" name="int_item10"></td>
+    <td onload="submit()"></td>
+    <td onload="submit()"></td>
+</tr>
+<tr>
+    <td colspan="2">Total Commission:</td>
+    <td><input type="text" class="t" name="final_total"></td>
+    <td><input type="text" class="t" name="final_total"></td>
+</tr>
+<tr>
+    <td colspan="2">Total :</td>
+    <td><input type="text"  class="t" name="salary"></td>
+    <td><input type="text"  class="t" name="salary"></td>
+</tr>
+</table>
+</div>
+
+
+<script>
+
+var num_item1 = "";
+var num_item2 = "";
+var num_item3 = "";
+var num_item4 = "";
+
+
+var int_item1 = "";
+var int_item2 = "";
+var int_item3 = "";
+var int_item4 = "";
+
+var total_item1;
+var total_item2;
+var total_item3;
+var total_item4;
+
+var commission = 2.5;
+
+
+function numberProduced() {
+    num_item1
+    num_item2
+    num_item3
+    num_item4
+
+}
+
+function totalProduced() {
+    total_item1 = num_item1 * price1;
+    total_item2 = num_item2 * price2;
+    total_item3 = num_item3 * price3;
+    total_item4 = num_item4 * price4;
+}
+
+function amountProduced() {
+    total_item1 + total_item2 + total_item3 + total_item4;
+
+}
+
+function getComm() {
+    comm = Math.floor(9/amountSold*100);
+}
+
+function weeklyEarned() {
+ amountSold + comm + 200
+document.write();
+}
+
+function submit (){
+    
+}
+</script>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
